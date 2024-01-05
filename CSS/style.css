@@ -13,15 +13,18 @@ html {
 
 nav {
     display: flex;
-    padding:0 6%;
+    padding:1% 6%;
     align-items: center;
     justify-content: space-between;
+    /* border: 2px solid red; */
 }
 
 #logo {
+    
     height: auto;
     width: 125px;
     padding-top: 10%;
+    /* border: 2px solid rgb(36, 161, 17); */
 }
 
 .nav-link {
@@ -29,6 +32,7 @@ nav {
     text-align: right;
     text-decoration: none;
     color: gray;
+    /* border: 2px solid rgb(36, 161, 17); */
 }
 
 .nav-link ul li {
@@ -38,24 +42,14 @@ nav {
     position: relative;
     border-top: #ffffff solid 2px;
     transition: 0.5s;
-    padding-top: 6%;
 }
-
-/* .nav-link ul li::before {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #0065FC;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-} */
 
 .nav-link ul li:hover {
     border-top: #0065FC solid 2px;
 }
 
 #heading-text {
+    /* outline: 2px solid rgb(48, 21, 181); */
     padding-left: 6%;
 }
 
@@ -64,14 +58,14 @@ nav {
 }
 
 #search-bar {
+    /* outline: 2px solid rgb(219, 8, 176); */
     padding: 2% 6%;
-    width: 400px;
-    
-    
+    width: 400px;  
 }
 
 #search-bar form {
     display: flex;
+    
 }
 
 #search-bar i {
@@ -86,7 +80,6 @@ nav {
     padding: 10px;
     border-top: #F2F2F2 solid 1px;
     border-bottom: #F2F2F2 solid 1px;
-    
 }
 
 #search-bar button {
@@ -97,3 +90,55 @@ nav {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+
+@media (max-width: 992px) {
+    
+  }
+
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+    }
+
+    .nav-link {
+        text-align: center;
+        
+    }
+
+    /* How do I get the line underneath to span the length of the screen? */
+
+    #nav-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-link ul li {
+        list-style: none;
+        flex: 1;
+        padding: 0;
+        border-top: none;
+        border-bottom: #F2F2F2 solid 2px;
+        transition: 0.5s;
+    }
+    
+    .nav-link ul li:hover {
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+    }
+
+    #search-bar {
+        width: auto;
+        padding-top: 8%;
+        display: flex;
+        justify-content: center;
+    }
+
+  }
