@@ -29,18 +29,28 @@
         </nav>
     </header>
     <main>
-        <div id="heading-text">
+        <div id="heading-section">
             <h1>Find a place for your dream vacation</h1>
             <p>Downtown or in nature</p>
         </div>
-        <div id="search-bar">
+        
+        <div id="search-bar-section">
             <form action="">
                 <i class="fa-solid fa-location-dot"></i>
                 <input type="text" placeholder="Search" name="search">
-                <button type="search">Search</button>
+                <button class="desktop-only" type="search">Search</button>
+                <button class="mobile-only" type="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
             </form>
-            
         </div>
+
+        <div id="filters-section">
+            <p id="filters-text">Filters</p>
+            <div class="filter"><i class="fa-solid fa-money-bill-wave"></i><p>Low cost</p></div>
+            <div class="filter"><i class="fa-solid fa-child-reaching"></i><p>Family friendly</p></div>
+            <div class="filter"><i class="fa-solid fa-heart"></i><p>Romantic</p></div>
+            <div class="filter"><i class="fa-solid fa-dog"></i><p>Pets allowed</p></div>
+        </div>
+        <div id="info-text"><i class="fa-solid fa-info"></i><p>More than 500 accomodations are available in this city</p></div>
     </main>
     <footer></footer>
     

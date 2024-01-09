@@ -11,6 +11,10 @@ html {
     color: black;
 }
 
+.mobile-only {
+    display: none;
+}
+
 nav {
     display: flex;
     padding:1% 6%;
@@ -48,41 +52,41 @@ nav {
     border-top: #0065FC solid 2px;
 }
 
-#heading-text {
+#heading-section {
     /* outline: 2px solid rgb(48, 21, 181); */
     padding-left: 6%;
 }
 
-#heading-text p {
+#heading-section p {
     color: gray;
 }
 
-#search-bar {
+#search-bar-section {
     /* outline: 2px solid rgb(219, 8, 176); */
     padding: 2% 6%;
     width: 400px;  
 }
 
-#search-bar form {
+#search-bar-section form {
     display: flex;
     
 }
 
-#search-bar i {
+#search-bar-section i {
     background-color: #F2F2F2;
-    padding: 10px;
+    padding: 15px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-#search-bar input {
+#search-bar-section input {
     border: none;
     padding: 10px;
     border-top: #F2F2F2 solid 1px;
     border-bottom: #F2F2F2 solid 1px;
 }
 
-#search-bar button {
+#search-bar-section button {
     border: none;
     background: #0065FC; 
     color: white;
@@ -91,12 +95,82 @@ nav {
     border-bottom-right-radius: 10px;
 }
 
+#filters-section{
+    display: flex;
+}
+
+#filters-text{
+    align-self: center;
+    padding-right: 20px;
+    padding-left: 6%;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    margin-right: 20px;
+    
+}
+
+/* how do I use Overflow to get desired effect in filter icon? */
+/* why is family friendly icon oval? */
+
+.filter i {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.filter p {
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+#info-text {
+    display: flex;
+    padding-left: 6%;
+    align-items: center;
+    padding-top: 40px;
+    width: 530px;
+}
+
+#info-text i {
+    border: 2px solid #DEEBFF;
+    border-radius: 50%;
+    padding: 3px 8px;
+    color: #0065FC;
+}
+
+#info-text p {
+    color: gray;
+    padding-left: 10px;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+/* 992px for tablets- do I just need to make sure it still looks good? */
 
 @media (max-width: 992px) {
     
   }
 
 @media (max-width: 768px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
     nav {
         display: block;
     }
@@ -106,6 +180,7 @@ nav {
         margin-left: auto;
         margin-right: auto;
         padding-top: 5%;
+        padding-bottom: 10%;
     }
 
     .nav-link {
@@ -134,11 +209,27 @@ nav {
         border-bottom: #0065FC solid 2px;
     }
 
-    #search-bar {
+    #search-bar-section {
         width: auto;
         padding-top: 8%;
         display: flex;
         justify-content: center;
+    }
+
+    #search-bar-section button {
+        border: none;
+        background: #0065FC; 
+        color: white;
+        padding: 3px;
+        border-radius: 15px;
+
+    }
+
+    /*  I need to get the pin icon box and the magnifying glass box the same width  */
+
+    #search-bar-section button i {
+        background-color: #0065FC;
+        border-radius: 15px;
     }
 
   }
