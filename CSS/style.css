@@ -9,6 +9,7 @@ html {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     color: black;
+    padding-left: 6%;
 }
 
 .mobile-only {
@@ -17,7 +18,7 @@ html {
 
 nav {
     display: flex;
-    padding:1% 6%;
+    padding:1% 0%;
     align-items: center;
     justify-content: space-between;
     /* border: 2px solid red; */
@@ -54,7 +55,7 @@ nav {
 
 #heading-section {
     /* outline: 2px solid rgb(48, 21, 181); */
-    padding-left: 6%;
+    /* padding-left: 6%; */
 }
 
 #heading-section p {
@@ -63,7 +64,7 @@ nav {
 
 #search-bar-section {
     /* outline: 2px solid rgb(219, 8, 176); */
-    padding: 2% 6%;
+    padding: 2% 0%;
     width: 400px;  
 }
 
@@ -103,7 +104,7 @@ nav {
 #filters-text{
     align-self: center;
     padding-right: 20px;
-    padding-left: 6%;
+    padding-left: 0%;
 }
 
 .filter {
@@ -116,9 +117,6 @@ nav {
     height: 40px;
 }
 
-/* how do I use Overflow to get desired effect in filter icon? */
-
-
 .filter i {
     text-align: center;
     background-color: #DEEBFF;
@@ -129,7 +127,6 @@ nav {
     width: 40px;
     position: relative;
     right: 2px;
-    
 }
 
 .filter p {
@@ -140,7 +137,7 @@ nav {
 #info-text {
     display: flex;
     /* flex-wrap: wrap; */
-    padding-left: 6%;
+    /* padding-left: 6%; */
     padding-right: 20px;
     align-items: center;
     padding-top: 40px;
@@ -160,12 +157,48 @@ nav {
 }
 
 
+#accomodations-section {
+    background-color: #F2F2F2;
+    width: 1000px;
+}
+
+#card-section {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.cards {
+    width: 300px;
+    height: auto;
+    background-color: white;
+    padding: 0.5%;
+    border-radius: 10%;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px; */
+  }
+  
+  .card {
+    /* display: grid;
+    grid-template-rows: max-content 200px 1fr; */
+  }
+  
+  .card img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 10% 10% 0% 0%;
+  }
+
+
 
 
 /*--------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------*/
-/* 992px for tablets- do I just need to make sure it still looks good? */
+
 
 @media (max-width: 992px) {
     
