@@ -97,6 +97,7 @@ nav {
 
 #filters-section{
     display: flex;
+    flex-wrap: wrap;
 }
 
 #filters-text{
@@ -111,17 +112,24 @@ nav {
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     margin-right: 20px;
-    
+    overflow: visible;
+    height: 40px;
 }
 
 /* how do I use Overflow to get desired effect in filter icon? */
-/* why is family friendly icon oval? */
+
 
 .filter i {
+    text-align: center;
     background-color: #DEEBFF;
     color: #0065FC;
     border-radius: 50%;
     padding: 10px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    right: 2px;
+    
 }
 
 .filter p {
@@ -131,7 +139,9 @@ nav {
 
 #info-text {
     display: flex;
+    /* flex-wrap: wrap; */
     padding-left: 6%;
+    padding-right: 20px;
     align-items: center;
     padding-top: 40px;
     width: 530px;
@@ -173,6 +183,7 @@ nav {
 
     nav {
         display: block;
+        padding: 0;
     }
 
     #logo {
@@ -230,6 +241,10 @@ nav {
     #search-bar-section button i {
         background-color: #0065FC;
         border-radius: 15px;
+    }
+
+    #info-text {
+        width: auto;
     }
 
   }
