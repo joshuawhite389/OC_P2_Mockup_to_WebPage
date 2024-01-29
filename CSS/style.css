@@ -156,10 +156,16 @@ nav {
     padding-left: 10px;
 }
 
+/* #acc-most-pop-sections {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
 
 #accomodations-section {
     background-color: #F2F2F2;
     width: 1000px;
+    
     border-radius: 2%;
     padding: 3% 2% 4% 2%;
     
@@ -230,6 +236,27 @@ nav {
     background-color: #F2F2F2;
    display: flex;
    flex-wrap: wrap;
+   border-radius: 2%;
+   margin-right: 6%;
+   padding: 3% 2% 4% 2%;
+
+  }
+
+  .most-popular-cards {
+    display: flex;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    padding: 2%;
+    border-radius: 10%;
+    margin-bottom: 20px;
+  }
+
+  .most-popular-cards img {
+    object-fit: cover;
+    width: 40%;
+    height: 100%;
+    border-radius: 10% 0% 0% 10%;
   }
 
 
