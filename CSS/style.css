@@ -141,7 +141,8 @@ nav {
     padding-right: 20px;
     align-items: center;
     padding-top: 40px;
-    width: 530px;
+    width: 430px;
+    margin-bottom: 20px;
 }
 
 #info-text i {
@@ -152,26 +153,28 @@ nav {
 }
 
 #info-text p {
-    color: gray;
+    font-weight:100;
     padding-left: 10px;
 }
 
-/* #acc-most-pop-sections {
+
+#acc-most-pop-sections {
     display: flex;
-    justify-content: space-evenly;
-} */
+    
+  }
 
 
 #accomodations-section {
     background-color: #F2F2F2;
     width: 1000px;
-    
+    flex: 3;
     border-radius: 2%;
-    padding: 3% 2% 4% 2%;
+    padding: 3% 2% 3% 2%;
     
 }
 
 #accomodations-section h2 {
+    padding-left: 4%;
     padding-bottom: 2%;
 }
 
@@ -185,29 +188,29 @@ nav {
 
 
 .cards {
-    width: 300px;
-    height: 250px;
+    width: 330px;
+    height: 270px;
     background-color: white;
     padding: 1%;
     border-radius: 10%;
     margin-bottom: 20px;
-    
+    box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
   }
-  
-  
 
   .content {
     padding: 4%;
   }
 
   .content h4 {
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   .content p {
     font-weight: lighter;
+    margin-bottom: 4px;
   }
 
+  
   
   
   .cards img {
@@ -215,6 +218,11 @@ nav {
     width: 100%;
     height: 70%;
     border-radius: 10% 10% 0% 0%;
+  }
+
+  #show-more {
+    padding-left: 4%;
+    padding-top: 3%;
   }
 
   .blue-stars{
@@ -225,31 +233,39 @@ nav {
     color: #dbdbdb;
   }
 
-  #acc-most-pop-sections {
-    display: flex;
-    justify-content: space-between;
-    
-  }
+  
 
   #most-popular-section {
     width: 400px;
     background-color: #F2F2F2;
    display: flex;
+   flex: 1;
    flex-wrap: wrap;
    border-radius: 2%;
    margin-right: 6%;
+   margin-left: 20px;
    padding: 3% 2% 4% 2%;
 
   }
 
+  #most-popular {
+    display: flex;
+    
+  }
+
+  #most-popular i {
+    padding-left: 200px;
+  }
+
   .most-popular-cards {
     display: flex;
-    width: 350px;
+    width: -webkit-fill-available;
     height: 150px;
     background-color: white;
     padding: 2%;
     border-radius: 10%;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
   }
 
   .most-popular-cards img {
