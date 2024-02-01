@@ -191,7 +191,7 @@ nav {
     width: 330px;
     height: 270px;
     background-color: white;
-    padding: 1%;
+    padding: 7px;
     border-radius: 10%;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
@@ -253,20 +253,27 @@ nav {
     
   }
 
+  #most-popular h2 {
+    width: 200px;
+
+  }
+
   #most-popular i {
-    padding-left: 200px;
+    padding-left: 100px;
   }
 
   .most-popular-cards {
     display: flex;
-    width: -webkit-fill-available;
+    width: 330px;
     height: 150px;
     background-color: white;
-    padding: 2%;
+    padding: 7px;
     border-radius: 10%;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
   }
+
+  
 
   .most-popular-cards img {
     object-fit: cover;
@@ -282,12 +289,19 @@ nav {
 /*--------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------*/
 
-
+/* Tablet */
 @media (max-width: 992px) {
+
+    
     
   }
 
+/* Phone */
 @media (max-width: 768px) {
+
+    html {
+        padding: 0;
+    }
 
     .desktop-only {
         display: none;
@@ -300,6 +314,7 @@ nav {
     nav {
         display: block;
         padding: 0;
+
     }
 
     #logo {
@@ -308,6 +323,7 @@ nav {
         margin-right: auto;
         padding-top: 5%;
         padding-bottom: 10%;
+        
     }
 
     .nav-link {
@@ -359,8 +375,36 @@ nav {
         border-radius: 15px;
     }
 
+    #heading-section {
+        padding-left: 6%;
+    }
+
+    #filters-section {
+        padding-left: 6%;
+    }
+
     #info-text {
         width: auto;
+        padding-left: 6%;
+    }
+
+    #acc-most-pop-sections {
+        flex-direction: column-reverse;
+    }
+
+    
+
+    #most-popular-section {
+        width: auto;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+
+    #accomodations-section {
+        width: auto;
+        margin: 0;
+        border-radius: 0;
     }
 
   }
