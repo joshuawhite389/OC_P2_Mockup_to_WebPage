@@ -239,8 +239,7 @@ nav {
     width: 400px;
     background-color: #F2F2F2;
    display: flex;
-   flex: 1;
-   flex-wrap: wrap;
+   flex-direction: column;
    border-radius: 2%;
    margin-right: 6%;
    margin-left: 20px;
@@ -281,6 +280,54 @@ nav {
     height: 100%;
     border-radius: 10% 0% 0% 10%;
   }
+
+  #activities-header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+
+  #activities-section {
+    
+    margin-bottom: 100px;
+    display: flex;
+  }
+
+  .activity-card {
+    width: 375px;
+    height: 550px;
+    background-color: rgb(248, 165, 165);
+    padding: 7px;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
+    margin-right: 50px;
+  }
+  
+
+  .activity-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .activity-row {
+    display: flex;
+    
+  }
+
+  .activity-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+  }
+
+  .activity-column .activity-card {
+    background-color: #87b7ff;
+    height: 45%;
+  }
+ 
+  /* .activity-container {
+    padding: 2px 16px;
+  } */
 
 
 
@@ -379,8 +426,20 @@ nav {
         padding-left: 6%;
     }
 
+    #search-bar-section form {
+        width: 90%;
+    }
+
+    #search-bar-section input {
+        width: 90%;
+    }
+
     #filters-section {
         padding-left: 6%;
+    }
+
+    #mobile-filters-text {
+        padding: 7% 0% 5% 6%;
     }
 
     #info-text {
@@ -405,6 +464,13 @@ nav {
         width: auto;
         margin: 0;
         border-radius: 0;
+        background-color: white;
     }
+
+    #most-popular h2 {
+        padding-left: 4%;
+    padding-bottom: 2%;
+    
+      }
 
   }
