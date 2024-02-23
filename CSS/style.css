@@ -123,6 +123,10 @@ nav {
     height: 40px;
 }
 
+.filter:hover {
+  background-color: #0065FC;
+}
+
 .filter i {
     text-align: center;
     background-color: #DEEBFF;
@@ -163,6 +167,14 @@ nav {
     padding-left: 10px;
 }
 
+.map-link {
+  text-decoration: none;
+  color: inherit;
+}
+.map-link:visited {
+  text-decoration: none;
+  color: inherit;
+}
 
 #acc-most-pop-sections {
     display: flex;
@@ -208,7 +220,7 @@ nav {
   }
 
   .content h4 {
-    margin-bottom: 4px;
+    margin-bottom: 7px;
   }
 
   .content p {
@@ -216,7 +228,9 @@ nav {
     margin-bottom: 4px;
   }
 
-  
+  .star-box {
+    font-size: 13px;
+  }
   
   
   .cards img {
@@ -232,7 +246,8 @@ nav {
   }
 
   .star-container{
-    margin-top: 50px;
+    margin-top: 40px;
+
   }
 
   .blue-stars{
