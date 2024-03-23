@@ -193,7 +193,7 @@ nav {
   background-color: #F2F2F2;
   width: 1000px;
   flex: 3;
-  border-radius: 2%;
+  border-radius: 18px;
   padding: 3% 2% 3% 2%;
 
 }
@@ -215,13 +215,15 @@ nav {
   height: 270px;
   background-color: white;
   padding: 7px;
-  border-radius: 10%;
+  border-radius: 27px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
 }
 
 .content {
   padding: 4%;
+  position: relative;
+  bottom: 8px;
 }
 
 .content h4 {
@@ -234,7 +236,13 @@ nav {
 }
 
 .star-box {
-  font-size: 13px;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.star-box li {
+  display: inline;
 }
 
 
@@ -242,7 +250,7 @@ nav {
   object-fit: cover;
   width: 100%;
   height: 70%;
-  border-radius: 10% 10% 0% 0%;
+  border-radius: 21px 21px 0 0;
 }
 
 #show-more {
@@ -270,7 +278,7 @@ nav {
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  border-radius: 2%;
+  border-radius: 18px;
   margin-right: 6%;
   margin-left: 20px;
   padding: 3% 2% 4% 2%;
@@ -302,9 +310,24 @@ nav {
   height: 150px;
   background-color: white;
   padding: 7px;
-  border-radius: 10%;
+  border-radius: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
+}
+
+.most-popular-star-box {
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.most-popular-star-box {
+  position: relative;
+  top: 37px;
+}
+
+.most-popular-star-box li {
+  display: inline;
 }
 
 
@@ -313,7 +336,7 @@ nav {
   object-fit: cover;
   width: 40%;
   height: 100%;
-  border-radius: 10% 0% 0% 10%;
+  border-radius: 15px 0 0 15px;
 }
 
 #activities-header {
@@ -327,6 +350,7 @@ nav {
   margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 35px;
 }
 
 #activity-card-1,
@@ -339,7 +363,7 @@ nav {
   width: 375px;
   height: 550px;
 
-  border-radius: 5%;
+  border-radius: 26px;
   box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
   margin-right: 50px;
 }
@@ -363,14 +387,14 @@ nav {
   object-fit: cover;
   width: 100%;
   height: 220px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 26px 26px 0 0;
 }
 
 #activity-card-3 img {
   object-fit: cover;
   width: 100%;
   height: 168px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 26px 26px 0 0;
 }
 
 #activity-card-5,
@@ -383,7 +407,7 @@ nav {
   object-fit: cover;
   width: 100%;
   height: 190px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 26px 26px 0 0;
 }
 
 
@@ -399,7 +423,7 @@ nav {
   object-fit: cover;
   width: 100%;
   height: 490px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 26px 26px 0 0;
 
 }
 
@@ -449,6 +473,10 @@ nav {
     height: max-content;
   }
 
+  #activities-section {
+    column-gap: 30px;
+    row-gap: 15px;
+    }
 
 }
 
@@ -616,13 +644,15 @@ nav {
   #activities-header {
     padding-top: 40px;
     display: flex;
-    padding-left: 50px;
+    padding-left: 16%;
+    
   }
 
   #activities-section {
 
     margin-bottom: 20px;
     justify-content: center;
+    row-gap: 0;
   }
 
   .activity-column {
